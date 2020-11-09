@@ -1,0 +1,71 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #72787D;
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 1096px;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  outline: none;
+}
+
+.button-order {
+  padding: 13px 25px;
+  background: $dark;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  transition: all 0.3s linear;
+  &:hover {
+    background: $blue;
+  }
+}
+
+
+.button-more {
+  padding: 13px 25px;
+  border-radius: 4px;
+  border: 1px solid #DADEDF;
+  font-size: 18px;
+  line-height: 24px;
+  color: #212B31;
+  transition: 0.3s all;
+  &:hover {
+    border-color: $blue;
+    color: $blue;
+  }
+
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 48px;
+  color: $dark;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: $dark;
+}
+
+.description {
+  font-size: 20px;
+  line-height: 32px;
+}
+

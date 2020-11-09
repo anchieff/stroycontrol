@@ -1,0 +1,25 @@
+.slick-slide {
+  outline: none;
+}
+
+/* Точки (булиты) */
+.slick-dots{
+  display: flex;
+  position: absolute;
+  bottom: 56px;
+  left: 88px;
+}
+.slick-dots li{
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: rgba(3, 111, 199, 0.2);
+  margin-right: 8px;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active{
+  background: #036FC7;
+}
+
