@@ -28,9 +28,22 @@ window.addEventListener('DOMContentLoaded', function() {
 			slides.forEach((item) => item.style.display = 'none');
 			dots.forEach((item) => item.classList.remove('dot-active'));
 
-			slides[slideIndex - 1].style.display = 'block';
+			slides[sliderIndex - 1].style.display = 'block';
 			dots[sliderIndex - 1].classList.add('dot-active');
 		}
+
+		function currentSlide(n) {
+			showSlides(sliderIndex = n);
+		}
+
+		dotsWrap.addEventListener('click', function(event) {
+			for (let i = 1; i < dots.length +1; i ++) {
+				if (event.target.classList.contains('dot') && event.target == dots[i-1]) {
+					currentSlide(i);
+				}
+			}
+
+		});
 
 	// </Слайдер> ========================================================================== 
 

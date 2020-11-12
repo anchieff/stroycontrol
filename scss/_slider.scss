@@ -16,7 +16,7 @@
     position: relative;
   }
   &__content {
-    max-width: 458px;
+    max-width: 440px;
   }
   &__logo {
     margin: 127px auto 0;
@@ -79,15 +79,17 @@
   position: absolute;
   right: -94px;
   top: 0;
-  min-width: 0;
   width: 614px;
   background-color: #F6F8F9;
   border-radius: 5px;
 }
 
+.slider__wrapper {
+  padding: 60px 90px 56px 87px;
+}
+
 .reasons__slider-item {
-  padding: 60px 88px 92px;
-  min-width: 0;
+  
 }
 
 .slider__review {
@@ -121,6 +123,7 @@
 
 .slider-dots {
  margin-top: 28px;
+ display: flex;
 }
 .dot {
   width: 8px;
@@ -128,8 +131,12 @@
   border-radius: 100%;
   background: rgba(3, 111, 199, 0.2);
   margin-right: 8px;
+  cursor: pointer;
   &:last-child {
     margin-right: 0;
+  }
+  &_active {
+    background: $blue;
   }
 }
 
