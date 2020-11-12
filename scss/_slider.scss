@@ -1,25 +1,141 @@
-.slick-slide {
-  outline: none;
+/* <REASONS> =============================================================+=============== */
+
+.reasons {
+  margin-bottom: 127px;
+  &__title {
+    text-align: center;
+    margin-bottom: 17px;
+  }
+  &__description {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__content {
+    max-width: 458px;
+  }
+  &__logo {
+    margin: 127px auto 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 672px;
+  }
 }
 
-/* Точки (булиты) */
-.slick-dots{
+.logo__item {
+  margin: 0 60px 41px 0;
+  width: 184px;
+  text-align: center;
   display: flex;
-  position: absolute;
-  bottom: 56px;
-  left: 88px;
+  flex-direction: column;
+  align-items: center;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
 }
-.slick-dots li{
-  font-size: 0;
+
+.logo__img {
+  width: 100%;
+  height: 112px;
+  margin-bottom: 31px;
+}
+
+.logo__content {
+  max-width: 139px;
+}
+
+
+.reasons__content-item {
+  display: flex;
+  align-items: start;
+
+  + .reasons__content-item {
+    margin-top: 30px;
+  }
+}
+
+.reason__icon {
+  margin-right: 16px;
+}
+
+
+
+.reason__title {
+  margin-bottom: 10px;
+}
+
+
+// Slider ========================================================================================================================================================================
+.reasons__slider {
+  position: absolute;
+  right: -94px;
+  top: 0;
+  min-width: 0;
+  width: 614px;
+  background-color: #F6F8F9;
+  border-radius: 5px;
+}
+
+.reasons__slider-item {
+  padding: 60px 88px 92px;
+  min-width: 0;
+}
+
+.slider__review {
+  font-size: 30px;
+  line-height: 48px;
+  color: #212B31;
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 2;
+  &::before {
+    content: url(../images/reasons-quote.png);
+    position: absolute;
+    left: -45px;
+    top: -15px;
+    z-index: -1;
+  }
+}
+
+.slider__author {
+  display: flex;
+}
+
+.author__photo {
+  margin-right: 8px;
+}
+
+.author__name {
+  font-size: 16px;
+  color:$dark;
+}
+
+.slider-dots {
+ margin-top: 28px;
+}
+.dot {
   width: 8px;
   height: 8px;
   border-radius: 100%;
   background: rgba(3, 111, 199, 0.2);
   margin-right: 8px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
-/* Активная точка */
-.slick-dots li.slick-active{
-  background: #036FC7;
+.dot-active {
+  background: $blue;
 }
 
+
+/* </REASONS> ============================================================+=============== */
