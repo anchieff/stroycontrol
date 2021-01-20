@@ -11,43 +11,40 @@
 <body>
 
   <header class="header">
-    <div class="header__logo">
-      <a href="#"><img src="images/logo.svg" alt="СТРОЙКОНТРОЛЬ"></a>
+    <a class="header__logo" href="#">
+      <img src="images/logo.svg" alt="СТРОЙКОНТРОЛЬ">
+    </a>
+    <div class="header__burger">
+      <span></span>
     </div>
-    <div class="header__menu menu">
-      <div class="menu__closed">
-        <span></span>
-        <span></span>
-      </div>
-      <nav class="menu__nav">
-        <ul class="menu__items">
-          <li class="menu__item"><a href="#">Главная</a></li>
-          <li class="menu__item"><a href="#">О нас</a></li>
-          <li class="menu__item"><a href="#">Продукция</a></li>
-          <li class="menu__item"><a href="#">Процесс</a></li>
-          <li class="menu__item"><a href="#">Надёжность</a></li>
-          <li class="menu__item"><a href="#">Клиенты</a></li>
-          <li class="menu__item"><a href="#">Связаться с нами</a></li> 
-        </ul>
-      </nav>
-      <button class="menu__button">Заказать демо</button> 
-    </div> <!-- /header__menu -->
-    <div class="menu__burger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>  
+    <div class="menu">
+      <ul class="header__menu ">
+        <li class="menu__item"><a href="#main">Главная</a></li>
+        <li class="menu__item"><a href="#about">О нас</a></li>
+        <li class="menu__item"><a href="#product">Продукция</a></li>
+        <li class="menu__item"><a href="#process">Процесс</a></li>
+        <li class="menu__item"><a href="#safety">Надёжность</a></li>
+        <li class="menu__item"><a href="#clients">Клиенты</a></li>
+        <li class="menu__item"><a href="#contacts">Связаться с нами</a></li>
+        <li class="menu__button"><a class="button button_order">Заказать демо</a></li>
+      </ul> 
+    </div>    
+    
   </header>
 
-  <main class="main">
+  <main id="main" class="main">
     <div class="container">
-      <h1 class="main__title">Умная доставка материалов для сложных строительных площадок</h1>
+      <h1 class="main__title title title_h1">Умная доставка материалов для сложных строительных площадок</h1>
       <div class="main__buttons">
-        <button class="main__button-order button-order">Заказать демо</button>
-        <a href="#" class="main__button-more button-more">Подробнее</a>
+        <button class="main__button-order button button_order">Заказать демо</button>
+        <button href="#" class="main__button-more button button_more">Подробнее</button>
       </div>
-      <img class="main_bg" src="images/main-bg.svg" alt="">
-      <img src="images/main-cars.svg" alt="">     
+
+      <div class="main__images">
+        <img class="main__img" src="images/main-bg.svg" alt="construction site">
+        <img class="main__img" src="images/main-cars.svg" alt="working machines">
+      </div>
+     
     </div>
   </main>
 
@@ -59,7 +56,7 @@
           <div class="advantages__icon">
             <img src="images/advantages_icon1.svg" alt="">
           </div>
-          <h3 class="advantages__title">Повышение эффективности</h3>
+          <h3 class="advantages__title title title_h3">Повышение эффективности</h3>
           <div class="advantages__text">Эффективные проекты стоят дешевле 
             и завершаются в срок.</div>
         </div>
@@ -68,7 +65,7 @@
           <div class="advantages__icon">
             <img src="images/advantages_icon2.svg" alt="">
           </div>
-          <h3 class="advantages__title">Снижение потерь</h3>
+          <h3 class="advantages__title  title title_h3">Снижение потерь</h3>
           <div class="advantages__text">Тщательно отслеживайте движение стройматериалов, чтобы избежать краж и повреждений.</div>
         </div>
 
@@ -76,41 +73,46 @@
           <div class="advantages__icon">
             <img src="images/advantages_icon3.svg" alt="">
           </div>
-          <h3 class="advantages__title">Повышение безопасности</h3>
+          <h3 class="advantages__title  title title_h3">Повышение безопасности</h3>
           <div class="advantages__text">Обеспечьте здоровье и благополучие людей, работающих на вашей площадке.</div>
         </div>
 
       </div>
     </div>
-  </section> <!-- /advantages -->
+  </section>
 
   <section class="chaos">
     <div class="container">
-      <h2 class="chaos__title">Строительство - это хаос</h2>
-      <div class="chaos__description description">Хаос может быть удивительной творческой силой, воздвигающая новые здания из пыли.<br>
-        Хаос вызывает несчастные случаи, задержки и потери. Он вводит проекты в стресс и разочарование.<br>
-        Это означает, что вы действительно не контролируете ситуацию.</div>
-      <img src="images/chaos-bg.svg" alt="" class="chaos__img">
-      <h2 class="chaos__title--bottom">Пора навести порядок на вашей стройплощадке и взять под контроль свой проект</h2>
+      <h2 class="chaos__title title title_h2">Строительство - это хаос</h2>
+      <div class="chaos__description description">
+        <p>Хаос может быть удивительной творческой силой, воздвигающая новые здания из пыли. Хаос вызывает несчастные случаи, задержки и потери. Он вводит проекты в стресс и разочарование. Это означает, что вы действительно не контролируете ситуацию.</p>
+      </div>
+      <div class="chaos__img">
+        <img src="images/chaos-bg.svg" alt="builders">
+      </div>
+      
+      <h2 class="chaos__title-bottom title title_h2">Пора навести порядок на вашей стройплощадке и взять под контроль свой проект</h2>
     </div>
 
-  </section> <!-- /chaos -->
+  </section>
 
   <section class="help">
     <div class="container">
       <div class="help__content">
         <div class="help__info">
-          <h2 class="help__title">Мы заботимся о доставке на стройплощадку и о людях, которые на них рассчитывают</h2>
+          <h2 class="help__title title title_h2">Мы заботимся о доставке на стройплощадку и о людях, которые на них рассчитывают</h2>
           <div class="help__description description">Мы знаем всё о гордости от сияющего нового здания. Нам также известно всё о разочаровании от попыток завершить проект в срок и в рамках бюджета.</div>
-          <div class="help__description--underlined description">Мы здесь, чтобы помочь.</div>
+          <div class="help__description-underlined description">Мы здесь, чтобы помочь.</div>
         </div>
-        <div class="help__img"><img src="images/help-bg.svg" alt=""></div>
+        <div class="help__img">
+          <img src="images/help-bg.svg" alt="engineers">
+        </div>
       </div>
     </div>
 
-  </section> <!-- /help -->
+  </section>
 
-  <section class="partners">
+  <!-- <section id="clients" class="partners">
     <div class="partner__border"></div>
     <div class="container">
       <div class="partners__logo">
@@ -123,9 +125,9 @@
       </div>
     </div>
     <div class="partner__border"></div>
-  </section> <!-- /partners -->
+  </section> -->
 
-  <section class="aboutus">
+  <!-- <section id="about" class="aboutus">
     <div class="container">
       <h2 class="aboutus__title">Что такое СтройКонтроль?</h2>
         <div class="aboutus__description description">СтройКонтроль - это интеллектуальная система управления доставкой, предоставляющая информацию и контроль материалов на сложных строительных площадках в режиме реального времени.</div>
@@ -156,9 +158,9 @@
         </div>
       
     </div>
-  </section> <!-- /aboutus -->
+  </section> -->
 
-  <section class="delivery">
+  <!-- <section class="delivery">
     <div class="container">
       <h2 class="delivery__title">Доставка стала проще</h2>
       <div class="delivery__description description">Мы позаботимся обо всех ваших различных поставках и их многочисленных специализированных требованиях к разгрузке.</div>
@@ -232,9 +234,9 @@
       </div>
       <div class="description">...<span class="delivery__description--underline">и все остальные материалы,</span> которые поступают или покидают вашу площадку</div>
     </div>
-  </section> <!-- /delivery -->
+  </section> -->
 
-  <section class="reliability">
+  <!-- <section id="safety" class="reliability">
     <div class="container">
       <h2 class="reliability__title">Надёжность</h2>
       <div class="reliability__description description">Благодаря надёжному строительству выигрывают все - муниципальные органы выполняют свои обязанности перед гражданами, инвесторы получают сертификаты своих проектов, а генеральные подрядчики получают повышенную репутацию.</div>
@@ -262,9 +264,9 @@
       </div>
     </div>
 
-  </section> <!-- /reliability -->
+  </section> -->
 
-  <section class="create">
+  <!-- <section id="product" class="create">
     <div class="container">
       <h2 class="create__title">Создан для строительства</h2>
       <div class="create__content">
@@ -303,9 +305,9 @@
         </div>
       </div>
     </div>
-  </section> <!-- /create -->
+  </section> -->
 
-  <section class="work">
+  <!-- <section id="process" class="work">
     <div class="container">
       <div class="work__wrapper">
         <div class="work__info">
@@ -339,9 +341,9 @@
         </div>
       </div>
     </div>
-  </section> <!-- /work -->
+  </section> -->
 
-<section class="reasons">
+<!-- <section class="reasons">
   <div class="container">
     <h2 class="reasons__title">Почему нужно выбрать нас?</h2>
     <div class="reasons__description description">В строительной логистике всегда есть возможности для улучшения.</div>
@@ -381,7 +383,7 @@
           </div>
         </div>
 
-      </div> <!-- /reasons__content -->
+      </div>
 
       <div class="reasons__slider">
 
@@ -426,11 +428,11 @@
             <div class="dot"></div>  
           </div> 
           
-        </div> <!-- slider__wrapper -->
+        </div>
         
 
 
-    </div><!-- reasons__slider -->
+    </div>
     </div>
     <div class="reasons__logo">
       <div class="logo__item">
@@ -451,9 +453,9 @@
       </div>
     </div>
   </div>
-</section> <!-- /reasons -->
+</section> -->
 
-<section class="ready">
+<!-- <section id="contacts" class="ready">
   <div class="container">
     <div class="ready__wrapper">
       <h2 class="ready__title">Готовы оптимизировать логистику доставки для вашего сложного проекта?</h2>
@@ -463,9 +465,9 @@
       </div>
     </div>
   </div>
-</section><!-- /ready -->
+</section> -->
 
-<footer class="footer">
+<!-- <footer class="footer">
   <div class="container">
     <div class="footer__main">
       <div class="footer__conacts">
@@ -496,7 +498,7 @@
       <a href="" class="footer__policy">Политика конфиденциальности</a>
     </div>
   </div>
-</footer>
+</footer> -->
 
 
 

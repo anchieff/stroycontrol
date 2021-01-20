@@ -2,17 +2,28 @@ window.addEventListener('DOMContentLoaded', function() {
 	'use strict'
 
 	// <Меню бургер> ========================================================================== 
-	let menu = document.querySelector('.header__menu'),
-	burger = document.querySelector('.menu__burger'),
-	close = document.querySelector('.menu__closed');
+	const menu = document.querySelector('.menu');
+	const burger = document.querySelector('.header__burger');
 
-	burger.addEventListener('click', () => {
-	menu.classList.add('active');
-	});
+	function toggleClass(item, className) {
+		item.classList.contains(className) 
+			? item.classList.remove(className)
+			: item.classList.add(className);
+	}
 
-	close.addEventListener('click', () => {
-	menu.classList.remove('active');
-	});
+	burger.addEventListener('click', function() {
+		toggleClass(menu, 'menu--active');
+		toggleClass(burger, 'header__burger--active');
+	})
+
+	menu.addEventListener('click', function(e) {
+		const target = e.target.tagName
+		if (target == 'A') {
+			menu.classList.remove('menu--active');
+			burger.classList.remove('header__burger--active');
+		}
+	})
+
 	// </Меню бургер> =========================================================================
 
 

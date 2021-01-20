@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -11,61 +15,31 @@ body {
   margin: 0 auto;
 }
 
-button {
-  cursor: pointer;
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-  outline: none;
-}
-
-.button-order {
-  padding: 13px 25px;
-  background: $dark;
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 24px;
-  color: #FFFFFF;
-  transition: all 0.3s linear;
-  &:hover {
-    background: $blue;
+@media (max-width: 1200px) {
+  .container {
+    width: 960px;
   }
 }
 
-
-.button-more {
-  padding: 13px 25px;
-  border-radius: 4px;
-  border: 1px solid #DADEDF;
-  font-size: 18px;
-  line-height: 24px;
-  color: #212B31;
-  transition: 0.3s all;
-  &:hover {
-    border-color: $blue;
-    color: $blue;
+@media (max-width: 992px) {
+  .container {
+    width: 740px;
   }
-
 }
 
-h2 {
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 48px;
-  color: $dark;
+@media (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
 }
 
-h3 {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
-  color: $dark;
-}
-
-.description {
-  font-size: 20px;
-  line-height: 32px;
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .container {
+    width: 300px;
+  }
 }
 

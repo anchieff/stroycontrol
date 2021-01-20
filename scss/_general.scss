@@ -1,175 +1,5 @@
-/* <HEADER> ============================================================================== */
-
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 102px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  padding: 26px 31px;
-  z-index: 999;
-  .menu__burger {
-    display: none;
-  }
-  
-}
-
-.header__menu {
-  display: flex;
-  align-items: center;
-  .menu__closed {
-    display: none;
-  }
-}
 
 
-.menu__items {
-  display: flex;
-}
-
-.menu__item {
-  margin-right: 22px;
-  transition: all 0.3s linear;
-  &:hover {
-    color: $blue;
-  }
-}
-
-.menu__button {
-  background: $dark;
-  border-radius: 4px;
-  padding: 9px 20px;
-  color: #FFFFFF;
-  font-size: 15px;
-  transition: all 0.3s linear;
-  &:hover {
-    background: $blue;
-  }
-  
-}
-
-/* </HEADER> ============================================================================= */
-
-/* <MAIN> =================================================================================*/
-
-.main {
-  text-align: center;
-  margin-bottom: 148px;
-  margin-top: 176px;
-}
-
-.main__title {
-  font-weight: normal;
-  font-size: 48px;
-  line-height: 64px;
-  color: $dark;
-  max-width: 818px;
-  margin: 0 auto 30px;
-}
-
-.main__buttons {
-  margin-bottom: 80px;
-}
-
-.button-order {
-  margin-right: 16px;
-}
-
-.main_bg {
-  margin-bottom: 36px;
-}
-
-/* </MAIN> ================================================================================*/
-
-/* <ADVANTAGES> ========================================================================= */
-
-.advantages {
-  margin-bottom: 142px;
-}
-
-.advantages__items {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-}
-
-.advantages__item {
-  max-width: 325px;
-}
-
-.advantages__icon {
-  margin-bottom: 20px;
-}
-
-.advantages__title {
-  margin-bottom: 10px;
-}
-
-/* </ADVANTAGES> ========================================================================= */
-
-/* <CHAOS> =============================================================================== */
-
-.chaos {
-  margin-bottom: 168px;
-  text-align: center;
-}
-
-.chaos__title {
-  margin-bottom: 16px;
-}
-
-.chaos__description {
-  margin-bottom: 40px;
-}
-
-.chaos__img {
-  margin-bottom: 144px;
-}
-
-.chaos__title--bottom {
-  max-width: 780px;
-  margin: 0 auto;
-}
-
-/* </CHAOS> ============================================================================== */
-
-/* <HELP> ================================================================================ */
-
-.help {
-  margin-bottom: 77px;
-}
-
-.help__content {
-  display: flex;
-}
-
-.help__title {
-  margin-bottom: 16px;
-  max-width: 490px;
-}
-
-.help__description {
-  max-width: 542px;
-}
-
-.help__description--underlined {
-  margin-top: 28px;
-  position: relative;
-  color: $dark;
-  &::after {
-    content: "";
-    position: absolute;
-    width: 250px;
-    height: 16px;
-    background-color: #FFD042;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-}
 
 /* </HELP> =============================================================================== */
 
@@ -589,7 +419,7 @@
     margin-bottom: 8px;
     transition: 0.3s all;
     &:hover {
-      color: $blue;
+      color: $accent-color;
     }
   }
 
@@ -604,7 +434,7 @@
 
   &__policy {
     &:hover {
-      color: $blue;
+      color: $accent-color;
     }
   }
 }
