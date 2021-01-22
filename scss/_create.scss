@@ -1,0 +1,75 @@
+.create {
+  margin-top: 150px;
+  padding: 143px 0 118px;
+  background-color: $dark;
+  background-image: url('../images/create/create-bg.svg');
+  background-repeat: no-repeat;
+  background-position: right 144px;
+  color: $add-color;
+  &__title {
+    color:$add-color;
+    margin-bottom: 50px;
+  }
+  &__content {
+    max-width: 589px;
+  }
+  &__item {
+    padding-left: 40px;
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 50px;
+    }
+    &-title {
+      color: $add-color;
+      margin-bottom: 10px;
+      position: relative;
+    
+      &::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        border-radius: 100%;
+        background-color: $add-color;
+        left: -40px;
+        top: 9px;
+      }
+    }
+    &-text {
+      color: rgba($add-color, 0.75);
+    }
+  }
+  &__buttons {
+    margin-bottom: 127px;
+  }
+  &__button-order {
+    background:$add-color;
+    color: $dark;
+  
+    &:hover {
+      color: $add-color;
+    }
+  }
+  &__button-more {
+    color: $add-color;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  &__content-item {
+    max-width: 340px;
+  }
+  &__icon {
+    margin-bottom: 20px;
+  }
+  &__content-title {
+    margin-bottom: 10px;
+    color: $add-color;
+  }
+  &__content-text {
+    color: rgba($add-color, 0.75);
+  }
+
+}

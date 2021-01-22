@@ -1,0 +1,6 @@
+@mixin link-hover {
+  transition: all 0.3s linear;
+    &:hover {
+      color: $accent-color;
+    }
+}
