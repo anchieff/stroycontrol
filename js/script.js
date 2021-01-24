@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	// <Слайдер> ========================================================================== 
 	let sliderIndex = 1,
 		slides = document.querySelectorAll('.reasons__slider-item'),
-		dotsWrap = document.querySelector('.slider-dots'),
+		dotsWrap = document.querySelector('.slider__dots'),
 		dots = document.querySelectorAll('.dot');
 
 		showSlides(sliderIndex);
@@ -55,6 +55,7 @@ window.addEventListener('DOMContentLoaded', function() {
 			}
 
 		});
+
 
 	// </Слайдер> ========================================================================== 
 
